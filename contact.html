@@ -19,16 +19,19 @@
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae ut, odio suscipit rem cupiditate, quae itaque, at ex error dolore perspiciatis sint magni blanditiis quidem asperiores! Ipsa, officiis. Quisquam, cumque!</p>
         <form action="POST">
             <label for="name">Name: 
-                <input type="text" id="name" name="name">
+                <input type="text" id="name" name="name" required>
             </label>
             <label for="email">Email:
-                <input type="text" id="email" name="email">
+                <input type="email" id="email" name="email" required>
             </label>
             <label for="telephone">Telephone: 
-                <input type="number" id="telephone" name="telephone">
+                <input type="number" id="telephone" maxlength="11" name="telephone" required>
+            </label>
+            <label for="age">Age: 
+                <input type="number" id="age" maxlength="2" name="age" required>
             </label>
             <label for="comment">Comment: 
-                <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+                <textarea name="comment" id="comment" cols="30" rows="10" required></textarea>
             </label>
             <input type="submit" value="Send">
         </form>
