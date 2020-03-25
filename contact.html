@@ -14,22 +14,40 @@
             <li><a href="./contact.html">Contact</a></li>
         </ul>
     </nav>
-    <h1>Contact</h1>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae ut, odio suscipit rem cupiditate, quae itaque, at ex error dolore perspiciatis sint magni blanditiis quidem asperiores! Ipsa, officiis. Quisquam, cumque!</p>
-    <form action="POST">
-        <label for="name">Name: 
-            <input type="text" id="name" name="name">
-        </label>
-        <label for="email">Email:
-            <input type="text" id="email" name="email">
-        </label>
-        <label for="telephone">
-            <input type="telephone" id="telephone" name="telephone">
-        </label>
-        <label for="comment">Comment: 
-            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
-        </label>
-        <input type="submit" value="Send">
-    </form>
+    <main>
+        <h1>Contact</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae ut, odio suscipit rem cupiditate, quae itaque, at ex error dolore perspiciatis sint magni blanditiis quidem asperiores! Ipsa, officiis. Quisquam, cumque!</p>
+        <form action="POST">
+            <div>
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="telephone">Telephone: </label>
+                <input type="number" id="telephone" maxlength="11" name="telephone" required>
+            </div>
+            <div>
+                <label for="age">Age: </label>
+                <input type="number" id="age" maxlength="2" name="age" required>
+            </div>
+            <div>
+                <label for="file">File: </label>
+                <input type="file" id="file" name="file" required>
+            </div>
+            <div>
+                <label for="sex">Girl: </label>
+                <input type="checkbox" id="sex" name="sex" required>
+            </div>
+            <div>
+                <label for="comment">Comment: </label>
+                <textarea name="comment" id="comment" cols="30" rows="10" required></textarea>
+            </div>
+            <input type="submit" value="Send">
+        </form>
+    </main>    
 </body>
 </html>
